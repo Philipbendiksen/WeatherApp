@@ -7,17 +7,20 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
-import App from "./App";
-import Explorer from "./Explorer";
-import Search from "./Search";
+import App from "./AppStyle";
+import Footer from "./Footer";
+import Header from "./Header";
+import LocationInput from "./LocationInput";
+import DisplayWeather from "./WheaterDisplay";
 
 const router = createBrowserRouter(
-  createRoutesFromElements(
+  createRoutesFromElements( 
     <Route path="/" Component={App}>
       <Route index element={<Navigate to="explorer" />} />
-      <Route path="explorer" Component={Explorer} />
-      <Route path="search" Component={Search} />
-      <Route path="*" element={<span>404</span>} />
+      <Route path="WheaterDisplay" Component={DisplayWeather} />
+      <Route path="LocationInput" Component={LocationInput} />
+      <Route path="Header" Component={Header} /> 
+      <Route path="Footer" Component={Footer} /> 
     </Route>
   )
 );

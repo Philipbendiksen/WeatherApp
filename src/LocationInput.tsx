@@ -1,16 +1,18 @@
 import { EllipsisHorizontalIcon } from "@heroicons/react/24/outline";
 
-function Explorer() {
+function Search() {
   return (
     <div className="flex flex-col">
       <div className="flex justify-between p-4">
-        <span className="ml-4">EXPLORER</span>
+        <span className="ml-4">SEARCH LOCATION</span>
         <EllipsisHorizontalIcon className="w-8 h-8" />
       </div>
 
-      <div>VSCODE-LAYOUT</div>
+      <input placeholder="Search" />
     </div>
   );
 }
 
-export default Explorer;
+export default Search;
+
+
