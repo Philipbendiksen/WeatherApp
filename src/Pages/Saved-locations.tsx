@@ -1,6 +1,6 @@
 
 
-function DisplayWeather() {
+function SavedLocations() {
   return (
    
     <div className="flex flex-col">
@@ -21,4 +21,4 @@ function DisplayWeather() {
   );
 }
 
-export default DisplayWeather;
+export default SavedLocations;

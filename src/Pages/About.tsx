@@ -1,6 +1,6 @@
 
 
-function Header() {
+function About() {
   return (
     <div className="flex flex-col">
       <div className="flex justify-between p-4">
@@ -14,5 +14,5 @@ Up unpacked friendly ecstatic so possible humoured do. Ample end might folly qui
   );
 }
 
-export default Header;
+export default About;
 
