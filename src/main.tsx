@@ -1,22 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import {
-  Navigate,
   Route,
   RouterProvider,
   createBrowserRouter,
-  createRoutesFromElements,
+  createRoutesFromElements
 } from "react-router-dom";
 import App from "./AppStyle";
-import Footer from "./Footer";
-import Header from "./Header";
-import LocationInput from "./LocationInput";
-import DisplayWeather from "./WheaterDisplay";
+import Footer from "./Pages/Footer";
+import Header from "./Pages/Header";
+import LocationInput from "./Pages/LocationInput";
+import DisplayWeather from "./Pages/WheaterDisplay";
 
 const router = createBrowserRouter(
   createRoutesFromElements( 
     <Route path="/" Component={App}>
-      <Route index element={<Navigate to="explorer" />} />
       <Route path="WheaterDisplay" Component={DisplayWeather} />
       <Route path="LocationInput" Component={LocationInput} />
       <Route path="Header" Component={Header} /> 
