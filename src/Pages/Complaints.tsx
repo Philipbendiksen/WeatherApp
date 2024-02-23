@@ -1,6 +1,6 @@
 
 
-function Footer() {
+function Complaints() {
     return (
       <div className="flex flex-col">
         <h2 className="text-xl flex justify-center ">Klagmål</h2>
@@ -16,6 +16,6 @@ function Footer() {
     );
   }
   
-  export default Footer;
+  export default Complaints;
   
   

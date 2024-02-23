@@ -6,19 +6,18 @@ import {
   createBrowserRouter,
   createRoutesFromElements
 } from "react-router-dom";
-import App from "./AppStyle";
-import Footer from "./Pages/Footer";
-import Header from "./Pages/Header";
-import LocationInput from "./Pages/LocationInput";
-import DisplayWeather from "./Pages/WheaterDisplay";
+import AppLayout from "./AppLayout";
+import About from "./Pages/About";
+import Complaints from "./Pages/Complaints";
+import LocationPage from "./Pages/LocationPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements( 
-    <Route path="/" Component={App}>
-      <Route path="WheaterDisplay" Component={DisplayWeather} />
-      <Route path="LocationInput" Component={LocationInput} />
-      <Route path="Header" Component={Header} /> 
-      <Route path="Footer" Component={Footer} /> 
+    <Route path="/" Component={AppLayout}>
+      {/* <Route index Component={HomePage} /> */}
+      <Route path=":name" Component={LocationPage} />
+      <Route path="about" Component={About} />
+      <Route path="complaints" Component={Complaints} />
     </Route>
   )
 );
