@@ -24,6 +24,7 @@ function AppLayout() {
           <Outlet />
           <MainArea /> 
           <HomePage />
+          
         </main>
 
       </div>
