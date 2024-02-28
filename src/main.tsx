@@ -9,13 +9,15 @@ import {
 import AppLayout from "./AppLayout";
 import About from "./Pages/About";
 import Complaints from "./Pages/Complaints";
+import HomePage from "./Pages/HomePage";
 import LocationPage from "./Pages/LocationPage";
+
 
 const router = createBrowserRouter(
   createRoutesFromElements( 
     <Route path="/" Component={AppLayout}>
-      {/* <Route index Component={HomePage} /> */}
-      <Route path=":name" Component={LocationPage} />
+      <Route path="home" Component={HomePage} /> 
+      <Route path=":name" children={LocationPage} />
       <Route path="about" Component={About} />
       <Route path="complaints" Component={Complaints} />
     </Route>

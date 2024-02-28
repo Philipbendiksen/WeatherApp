@@ -1,12 +1,14 @@
-function LocationPage() {
-  // Todo : useParams
-  // Hämta data
+/* Detta är en del av Main ytan */
+
+
+function LocationPage({ selectedLocation }: { selectedLocation: string }) {
   return (
     <div className="flex flex-col">
-        <p className="bg-slate-500 p-2 w-screen flex-1 font-bold text-yellow-500 text-center text-5xl">Sälen</p>
+      <p className="bg-slate-500 p-2 flex-1 font-bold text-yellow-500 text-center text-5xl">{selectedLocation}</p>
     </div>
   );
 }
 
 export default LocationPage;
+
 

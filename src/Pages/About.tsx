@@ -1,4 +1,6 @@
 
+/* Hit kommer man när man klickar på "läs mer" */
+
 
 function About() {
   return (
