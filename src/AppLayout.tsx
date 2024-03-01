@@ -1,5 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
 import SavedLocations from "./Pages/Saved-locations";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import LocationInput from "./components/LocationInput";
 
@@ -13,18 +14,23 @@ function AppLayout() {
         {/* SIDEBAR */}
         <aside className="flex max-w-96 bg-slate-100 border-l-2 w-96 p-2 flex-col">
             <LocationInput />
-            <SavedLocations /> {/* Döp om den till vad den faktiskt är */}
+            <SavedLocations /> 
         </aside>
        
-        <main className="flex flex-1 max-w-100%">
+
+       {/* Kolla koppling mellan "Home-page, MainArea, LocationPage! Dessa printar alla ut content i Main området. " */}
+        <main >
           <Outlet />
         </main>
 
       </div>
 
-      {/* Footer */}
-      <Link to="Footer" className="bg-gray-800 p-2 text-white max-w-100%">Complains about the weather? click here to get in contact with thor</Link>
+     
+      <Link to="Complaints" className="bg-gray-800 p-2 flex text-white md:max-w-96">Complains about the weather? click here to get in contact with thor</Link>
+      <Footer />
     </div>
+
+    
   );
 }
 
