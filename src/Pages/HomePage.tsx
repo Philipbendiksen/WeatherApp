@@ -5,7 +5,7 @@ function HomePage () {
 
     return (
 
-        <button> Does this work? </button>
+        <div></div>
     ); 
 
 }

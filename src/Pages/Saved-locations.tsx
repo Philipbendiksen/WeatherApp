@@ -2,7 +2,7 @@
 /* Detta är en hårdkodad lista med platser, som går att klicka på */
 
 import { SetStateAction, useState } from "react";
-import LocationPage from "../Pages/LocationPage";
+import LocationPage from "./LocationPage";
 
 
 function SavedLocations() {
@@ -13,7 +13,7 @@ function SavedLocations() {
     setSelectedLocation(location);
   };
 
-  const locations = ['Sälen', 'Trysil', 'Åre', 'Tänndalen'];
+  const locations = ['Sälen', 'Trysil', 'Åre', 'Stöten'];
 
   return (
     <div className="flex flex-col">

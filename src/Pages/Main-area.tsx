@@ -17,11 +17,8 @@ function MainArea() {
     <div className="flex flex-1 max-w-100%">
       <div
         className="w-60 h-60"
-        style={{ backgroundColor: boxColor }} 
-      ></div>
-      <button className="bg-black hover:bg-slate-800 text-white w-40 h-40 m-4 font-bold rounded" onClick={changeColor}>
-        Klicka för att ändra färg
-      </button>
+        style={{ backgroundColor: boxColor }} ></div>
+      <button className="bg-black hover:bg-slate-800 text-white w-40 h-40 m-4 font-bold rounded" onClick={changeColor}> Klicka för att ändra färg </button>
     </div>
   );
 }

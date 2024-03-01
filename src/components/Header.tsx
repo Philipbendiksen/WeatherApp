@@ -5,7 +5,7 @@ function Header() {
   return (
     <header> 
       
-        <div className="flex justify-between items-center pr-6 bg-gray-800 p-2 border-t-1 text-white"> 
+        <div className="flex justify-between items-center pr-6 bg-gray-800 p-2 text-white max-w-full"> 
       
        <Link to={"HomePage"} className="flex items-center"> <HomeIcon className="w-6 h-6 mr-2" /> HOME </Link>
 

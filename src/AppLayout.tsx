@@ -1,9 +1,11 @@
 import { Link, Outlet } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
+import LocationPage from "./Pages/LocationPage";
 import MainArea from "./Pages/Main-area";
+import SavedLocations from "./Pages/Saved-locations";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import LocationInput from "./components/LocationInput";
-import SavedLocations from "./components/Saved-locations";
 
 function AppLayout() {
   return (
@@ -19,19 +21,24 @@ function AppLayout() {
         </aside>
        
 
-       {/* Kolla koppling mellan "Home-page, MainArea, LocationPage! Dessa printar alla ut content i Main området. Kolla också vad outlet gör i Main. " */}
+       {/* Kolla koppling mellan "Home-page, MainArea, LocationPage! Dessa printar alla ut content i Main området. " */}
         <main >
           <Outlet />
           <MainArea /> 
           <HomePage />
+
+          <LocationPage /> 
           
         </main>
 
       </div>
 
-      {/* Footer */}
-      <Link to="Complaints" className="bg-gray-800 p-2 text-white max-w-100%">Complains about the weather? click here to get in contact with thor</Link>
+     
+      <Link to="Complaints" className="bg-gray-800 p-2 flex text-white md:max-w-96">Complains about the weather? click here to get in contact with thor</Link>
+      <Footer />
     </div>
+
+    
   );
 }
 
