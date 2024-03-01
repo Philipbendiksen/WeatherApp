@@ -1,7 +1,4 @@
 import { Link, Outlet } from "react-router-dom";
-import HomePage from "./Pages/HomePage";
-import LocationPage from "./Pages/LocationPage";
-import MainArea from "./Pages/Main-area";
 import SavedLocations from "./Pages/Saved-locations";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -24,11 +21,6 @@ function AppLayout() {
        {/* Kolla koppling mellan "Home-page, MainArea, LocationPage! Dessa printar alla ut content i Main området. " */}
         <main >
           <Outlet />
-          <MainArea /> 
-          <HomePage />
-
-          <LocationPage /> 
-          
         </main>
 
       </div>
