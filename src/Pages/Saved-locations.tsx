@@ -21,14 +21,15 @@ function SavedLocations() {
   };
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col md:w-72 w-40">
       <div className="flex flex-col">
         <div className="flex justify-between p-2">
           <span>Lägg till platser</span>
           <MagnifyingGlassIcon className="w-6 h-6" />
         </div>
-        <div className="flex">
+        <div className="flex flex-col md:flex-row w-72">
           <input
+            className="max-w-40"
             placeholder="Tänndalen..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}

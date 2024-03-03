@@ -10,27 +10,26 @@ function AppLayout() {
       <Header />
 
       <div className="flex flex-1">
-        
         {/* SIDEBAR */}
-        <aside className="flex max-w-96 bg-slate-100 border-l-2 w-96 p-2 flex-col">
-            <LocationInput />
-            <SavedLocations /> 
+        <aside className="flex bg-slate-100 border-l-2 md:w-72 w-44 flex-col">
+          <LocationInput />
+          <SavedLocations />
         </aside>
-       
 
-       {/* Kolla koppling mellan "Home-page, MainArea, LocationPage! Dessa printar alla ut content i Main området. " */}
-        <main >
+        {/* Kolla koppling mellan "Home-page, MainArea, LocationPage! Dessa printar alla ut content i Main området. " */}
+        <main>
           <Outlet />
         </main>
-
       </div>
 
-     
-      <Link to="Complaints" className="bg-gray-800 p-2 flex text-white md:max-w-96">Complains about the weather? click here to get in contact with thor</Link>
+      <Link
+        to="Complaints"
+        className="bg-gray-800 p-2  text-white flex md:w-72 w-44"
+      >
+        Complains about the weather? click here to get in contact with thor
+      </Link>
       <Footer />
     </div>
-
-    
   );
 }
 
